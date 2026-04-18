@@ -28,7 +28,7 @@ function App() {
     formData.append("file", file)
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/analyze", {
+      const response = await fetch("https://sem-analyzer-api.onrender.com/api/analyze", {
         method: "POST",
         body: formData,
       })
