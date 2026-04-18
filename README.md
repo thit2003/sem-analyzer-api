@@ -49,20 +49,29 @@ It receives raw `.csv` data from the frontend, uses Pandas to aggregate thousand
     }
   }
 }
-🛠️ How to Run Locally
-Clone the repository:
+```
 
-Bash
-git clone [https://github.com/thit2003/sem-analyzer-api.git](https://github.com/thit2003/sem-analyzer-api.git)
-cd sem-analyzer-api
-Install dependencies:
-It is recommended to use a virtual environment.
+## 🛠️ How to Run Locally
 
-Bash
-pip install -r requirements.txt
-Run the server:
+1. Clone the repository:
 
-Bash
-uvicorn main:app --reload
-Test the API:
-Navigate to http://127.0.0.1:8000/docs in your browser to use FastAPI's built-in Swagger UI and test file uploads directly.
+   ```bash
+   git clone https://github.com/thit2003/sem-analyzer-api.git
+   cd sem-analyzer-api
+   ```
+
+2. Install dependencies (recommended: use a virtual environment):
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the server:
+
+   ```bash
+   uvicorn main:app --reload
+   ```
+
+4. Test the API:
+
+   Open http://127.0.0.1:8000/docs in your browser to use FastAPI's built-in Swagger UI and test file uploads directly.
